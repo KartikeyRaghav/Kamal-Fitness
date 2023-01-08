@@ -1,0 +1,225 @@
+.card-container {
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    min-height: calc(100vh - 80px);
+    line-height: 1.6;
+}
+
+.card-container .card {
+    padding: 10rem 0 0;
+    margin: 20px;
+    max-width: 35ch;
+    color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.card-container .card:hover,
+.card-container .card:focus-within {
+    transform: scale(1.05);
+}
+
+.card-container .card .card-content {
+    padding: 1.5rem;
+    background: linear-gradient(hsl(0 0% 0% / 0),
+            hsl(20 0% 0% / 0.3) 20%,
+            hsl(0 0% 0% / 1));
+}
+
+@media(hover) {
+    .card-container .card .card-content {
+        transform: translateY(68%);
+        transition: all 0.5s ease;
+    }
+
+    .card-container .card .card-content>*:not(.card-title) {
+        opacity: 0;
+        transition: opacity 0.5s linear;
+    }
+
+    .card-container .card:hover .card-content,
+    .card-container .card:focus-within .card-content {
+        transform: translateY(0);
+        transition-delay: 0.5s;
+    }
+
+    .card-container .card:focus-within .card-content {
+        transition-duration: 0;
+    }
+
+    .card-container .card:hover .card-content>*:not(.card-title),
+    .card-container .card:focus-within .card-content>*:not(.card-title) {
+        transition-delay: 1s;
+        opacity: 1;
+    }
+
+    .card-container .card .card-content .card-title::after {
+        transform: scaleX(0);
+    }
+}
+
+.card-container .card .card-content .card-title {
+    position: relative;
+    width: max-content;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card-container .card .card-content .card-title::after {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    bottom: -2px;
+    height: 3px;
+    background: #00CDff;
+    width: calc(100% + 1.5rem);
+    transform-origin: left;
+    transition: all 0.5s ease;
+}
+
+.card-container .card:hover .card-content .card-title::after,
+.card-container .card:focus-within .card-content .card-title::after {
+    transform: scaleX(1);
+}
+
+.card-container .card .card-content .card-body {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.card-container .card .card-content .button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #00CDff;
+    padding: 0.5rem 1.25rem;
+    color: #071d31;
+    transition: all 0.4s ease;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.card-container .card .card-content .button:hover {
+    background-color: #edf5e1;
+}
+
+.left-section {
+    width: 90%;
+    margin: auto;
+}
+
+.mainTitle {
+    text-align: center;
+}
+
+.mission {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.div-container .div-card .div-content ul li {
+    color: #ccc;
+    list-style: square;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.div-container .div-card .div-content ul li span {
+    font-weight: bold;
+}
+
+.diet-card {
+    margin-top: 25px;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.diet-card .diet p {
+    padding: 0 20px;
+    color: red;
+    font-weight: bold;
+    list-style: square;
+    text-align: left;
+}
+
+h1.hed{
+    margin: 20px 20px;
+    text-align: center;
+    font-size: 3em;
+    color: #5680e9;
+}
+
+p.start{
+    padding: 0px 40px;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-table{
+    margin: 20px 0;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 60vw;
+    max-width: 70vw;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr{
+    background-color: #00CDff;
+    color: #071d31;
+    font-weight: bold;
+}
+
+.content-table th, .content-table td{
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #071d31;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 4px solid #00CDff;
+}
+
+.content-table tbody tr td{
+    font-weight: 500;
+    color: #ccc;
+}
+
+.content-table tbody tr td ul li{
+    list-style: square;
+    text-align: left;
+    color: #2a1b3d  ;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

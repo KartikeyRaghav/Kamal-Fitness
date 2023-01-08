@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Hair | Diet Plans | Kamal Fitness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/diet.css">
+    <link rel="stylesheet" href="../css/muscle_gain.css">
+    <script src="https://kit.fontawesome.com/44eca703d4.js"></script>
+</head>
+
+<body>
+    <div class="head"></div>
+    <div style="height: 80px;"></div>
+    <div class="top"
+        style="background: rgba(0, 0, 0, 0.8) url('../images/healthy\ hair.jpg'); background-size: cover; background-position: center;">
+        <div class="left-section">
+            <h1 class="mainTitle text-big">Healthy Hair</h1>
+            <p class="mission">Hair fall and baldness is increasingly becoming a problem for most people who love to eat
+                junk food, follow an unhealthy eating pattern and have a stressed lifestyle. Hair fall can also be
+                caused by anxiety, insomnia, hair abuse or excessive use of chemicals like bleaching treatments, perming
+                and coloring. Soft drinks, snacks like fried, overcooked junk snacks, caffeine, alcohol and nicotine
+                have detrimental effects on the nutrients that enhance hair growth. Stress, some medications and poor
+                dietary habits are known to retard hair growth. Eating right, exercising, relieving stress and getting
+                plenty of sleep will help you maximize your hair growth. Also, incorporating healthy foods in your
+                day-to-day diet will lead to a healthy hair growth.
+                <br><br>
+                As hair is made of protein, ensuring you have enough protein in your diet is crucial for making hair
+                strong and healthy. If you are not consuming enough protein in your diet, your hair is likely to become
+                dry, brittle and weak. Extremely low protein diets may result in restricted hair growth and even hair
+                loss. Choose chicken, turkey, fish, dairy products and eggs as excellent sources of protein along with
+                vegetarian sources such as legumes and nuts. Eat the correct balance of the following nutrients
+                including protein, vitamins and minerals to supply hair with all that it needs to remain shiny, lustrous
+                and strong. Iron is an especially important mineral for hair and too little iron is a major cause of
+                hair loss. The hair follicle and root are fed by a nutrient rich blood supply. When iron levels (serum
+                ferritin) fall below a certain point, you may experience anaemia. This disrupts the nutrient supply to
+                the follicle, affecting the hair growth cycle and may result in shedding. Animal products such as red
+                meat, chicken and fish provide iron with a high bioavailability, meaning the iron is readily available
+                to the body. Vegetarians can raise their iron stores by including lentils, spinach and other leafy green
+                vegetables such as broccoli, kale and salad greens.
+            </p>
+        </div>
+    </div>
+    <div class="div-container">
+        <div class="div-card">
+            <div class="div-content">
+                <h3 class="heading">Do's and Dont's</h3>
+                <h2>01</h2>
+                <div class="diet-container">
+                    <div class="diet-card">
+                        <h3>Do's</h3>
+                        <ul>
+                            <li>Do regular exercise</li>
+                            <li>Follow proper diet.</li>
+                            <li>Have a weekly scalp massage to provide stimulation to the hair follicles.</li>
+                            <li>Get plenty of rest and sleep to allow your body to grow hair.</li>
+                        </ul>
+                    </div>
+                    <div class="diet-card">
+                        <h3>Dont's</h3>
+                        <ul>
+                            <li>Avoid unnecessary brushing, combing or handling. Use a soft, round bristles brush.</li>
+                            <li>Avoid hot shower.</li>
+                            <li>Smoking.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-card">
+            <div class="div-content">
+                <h3 class="heading">Food Items You Can Easily Consume</h3>
+                <div style="height: 10px;"></div>
+                <h2>02</h2>
+                <ul>
+                    <li><span>Cereals:</span> Fortified cereals and Wholegrains</li>
+                    <li><span>Pulses and Legumes:</span> Kidney beans, Chickpeas, masoor dal, moongs beans</li>
+                    <li><span>Fruits and Vegetables:</span> blackcurrants, blueberries, broccoli, guava, kiwi fruits,
+                        oranges, papaya, strawberries, avocado, orange/yellow coloured vegetables such as carrots,
+                        pumpkins, onions and sweet potatoes</li>
+                    <li><span>Milk and Milk products:</span> Skim milk, yogurt, cottage cheese</li>
+                    <li><span>Meat: </span> Lean chicken, fish (salmon), eggs, oysters, beef</li>
+                    <li><span>Oil:</span> Sunflower oil, Avocado oil, Soybean oil, Cod Liver oil</li>
+                    <li><span>Nuts and Seeds:</span> Pumpkin seeds, Chia seed, Almonds and Walnuts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="foo"></div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+    $(function () {
+        $('.head').load('../diet_elements/header.html');
+        $('.foo').load('../diet_elements/footer.html');
+    });
+</script>
+
+<script type="module">
+    import { healthy_hair } from '../js/healthy_hair.js';
+
+    for (let i = 0; i < healthy_hair.length; i++) {
+        let card = document.createElement("div");
+        card.classList.add('div-card');
+
+        let content = document.createElement("div");
+        content.classList.add('div-content');
+
+        let heading1 = document.createElement("h3");
+        heading1.classList.add('heading');
+        heading1.innerText = healthy_hair[i][0];
+
+        let h2 = document.createElement("h2");
+        h2.innerText = healthy_hair[i][1];
+
+        let table = document.createElement("div");
+        table.classList.add("table");
+
+        let content_table = document.createElement("table");
+        content_table.classList.add("content-table");
+
+        let colgroup = document.createElement("colgroup");
+        let col1 = document.createElement("col");
+        col1.span = '1';
+        col1.style.width = '35%';
+        let col2 = document.createElement("col");
+        col2.span = '1';
+        col2.style.width = '65%';
+
+        let thead = document.createElement("thead");
+
+        let tr = document.createElement("tr");
+        let th1 = document.createElement("th");
+        th1.innerText = healthy_hair[i][2][0][0];
+        let th2 = document.createElement("th");
+        th2.innerText = healthy_hair[i][2][0][1];
+        tr.appendChild(th1);
+        tr.appendChild(th2);
+
+        let tbody = document.createElement("tbody");
+
+        for (let k = 1; k < healthy_hair[i][2].length; k++) {
+            let tr = document.createElement("tr");
+            let td1 = document.createElement("td");
+            td1.innerText = healthy_hair[i][2][k][0];
+            let td2 = document.createElement("td");
+            td2.innerText = healthy_hair[i][2][k][1];
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tbody.appendChild(tr);
+        }
+
+        thead.appendChild(tr);
+        colgroup.appendChild(col1);
+        colgroup.appendChild(col2);
+        content_table.appendChild(colgroup);
+        content_table.appendChild(thead);
+        content_table.appendChild(tbody);
+        table.appendChild(content_table);
+        content.appendChild(heading1);
+        content.appendChild(h2);
+        content.appendChild(table);
+        card.appendChild(content);
+        document.querySelector('.div-container').appendChild(card);
+    }
+</script>
+
+</html>

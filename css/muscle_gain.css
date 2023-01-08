@@ -1,0 +1,19 @@
+.diet-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.diet-container .diet-card{
+    width: 35vw;
+}
+
+@media(max-width:800px){
+    .diet-container{
+        flex-direction: column;
+    }
+    .diet-container .diet-card{
+        width: 70vw;
+    }
+}
