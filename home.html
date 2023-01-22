@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/44eca703d4.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -153,11 +154,14 @@
             <div class="col" id="contact">
                 <h3>Contact Us<div class="underline"><span></span></div>
                 </h3>
-                <form>
+                <form onsubmit="sendEmail(); reset(); return false;">
                     <input type="text" id="name" placeholder="Enter Your Name" required>
                     <input type="email" id="email" placeholder="Enter Your Email-id" required>
                     <input type="number" id="mobile" placeholder="Enter Your Mobile Number" required>
-                    <input id="message" rows="4" placeholder="How can we help you?" required>
+                    <textarea id="message" rows="2" placeholder="How can we help you?"
+                        style="background-color: white; border-radius: 20px; border: none; padding: 0 10px; margin: 5px 0; outline: none;"
+                        cols="36" required></textarea>
+                    <br>
                     <button type="submit">Send</button>
                 </form>
             </div>
@@ -171,6 +175,21 @@
         <hr>
         <p class="copy">KAMAL FITNESS &copy; 2023 - All Rights Reserved</p>
     </footer>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "kartikeyraghav2006@gmail.com",
+                Password: "9A889156BD0C2767128A5E7D1F9AC10FEE07",
+                To: 'kartikeyraghav2006@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "This is the subject",
+                Body: "And this is the body",
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
 </body>
 
 </html>

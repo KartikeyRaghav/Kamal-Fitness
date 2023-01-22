@@ -539,18 +539,22 @@ footer form input {
     width: 100%;
     padding: 5px 10px;
     margin: 5px 0;
-    background: transparent;
+    background: white;
     border-radius: 20px;
-    color: #ccc;
     border: 0;
     outline: none;
 }
 
 footer form button {
-    background: transparent;
+    background: #00CDFF;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #000c40;
     border: 0;
     outline: none;
     cursor: pointer;
+    font-size: 20px;
 }
 
 footer form .fas {
@@ -558,7 +562,7 @@ footer form .fas {
     color: #ccc;
 }
 
-footer .social-icons{
+footer .social-icons {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -613,6 +617,28 @@ footer .copy {
 
     .div-container h2 {
         display: none;
+    }
+
+    .container {
+        padding-bottom: 1px;
+    }
+
+    .container .card,
+    .container .card.right {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container .card div h3,
+    .container .card div p {
+        margin-bottom: 5px;
+    }
+
+    .container .card img,
+    .container .card.right img{
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -678,6 +704,10 @@ footer .copy {
         width: 100%;
 
     }
+
+    .container .card img{
+        width: 450px;
+    }
 }
 
 @media(max-width:520px) {
@@ -688,5 +718,14 @@ footer .copy {
     footer .row .col:nth-child(2),
     footer .row .col:nth-child(3) {
         flex-basis: 100%;
+    }
+    .container .card img{
+        width: 350px;
+    }
+}
+
+@media(max-width:300px){
+    .container .card img{
+        width: 260px;
     }
 }
