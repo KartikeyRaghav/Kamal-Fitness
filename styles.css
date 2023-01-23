@@ -37,7 +37,7 @@ header {
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     position: fixed;
     z-index: 99;
@@ -70,7 +70,7 @@ header .logo img {
 }
 
 header ul {
-    flex: 2;
+    flex: 3;
     display: flex;
     justify-content: space-evenly;
 }
@@ -84,8 +84,9 @@ header ul li a {
     color: #071D31;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 10px 0px;
     transition: all 0.5s ease;
+    font-size: 15px;
 }
 
 header ul li::after {
@@ -106,6 +107,29 @@ header ul li:hover::after {
 header .menu {
     font-size: 2em;
     display: none;
+}
+
+header ul li.drop .sub-menu{
+    display: none;
+}
+
+header ul li.drop:hover .sub-menu, header ul li.drop .sub-menu.active{
+    display: block;
+    position: absolute;
+    background: #00CDFF;
+    padding-top: 15px;
+    margin-left: -15px;
+    border-radius: 15px;
+}
+
+header ul li.drop:hover .sub-menu ul, header ul li.drop .sub-menu.active ul{
+    display: block;
+    margin: 10px;
+}
+
+header ul li.drop:hover .sub-menu ul li{
+    font-size: 13.5px;
+    width: fit-content;
 }
 
 .top {
@@ -439,6 +463,105 @@ header .menu {
     border-radius: 5px;
 }
 
+.button {
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    padding: 0.5rem 1.25rem;
+    color: white;
+    transition: all 0.4s ease;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cont{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.cont .card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont .card img{
+    width: 43vw;
+    border-radius: 10px;
+}
+
+.cont .card div{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 43vw;
+    background-color: grey;
+}
+
+.cont .card div h6{
+    font-size: 30px;
+    text-align: end;
+}
+
+.cont .card div h6:nth-child(1){
+    line-height: 20px;
+    text-align: start;
+}
+
+.conta{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.conta .card{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conta .card p{
+    font-size: 16px;
+    text-align: center;
+    color: #ccc;
+}
+
+.conta .card h6{
+    font-size: 23px;
+    color: white;
+}
+
+.conta .card div{
+    margin-top: 5px;
+}
+
+.conta .card div i{
+    color: gold;
+    font-size: 25px;
+}
+
+.conta .sec{
+    display: flex;
+    width: 42vw;
+    justify-content: space-between;
+}
+
+.contan{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 footer {
     margin-top: 50px;
     width: 100%;
@@ -568,7 +691,7 @@ footer .social-icons {
     width: 100%;
 }
 
-footer .social-icons .fa-brands {
+footer .social-icons i {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -671,9 +794,6 @@ footer .copy {
         text-align: center;
         margin-left: 0;
     }
-}
-
-@media(max-width:920px) {
 
     footer {
         bottom: unset;
@@ -694,6 +814,53 @@ footer .copy {
     }
 }
 
+@media(max-width:990px) {
+    .conta{
+        flex-direction: column;
+    }
+
+    .conta .sec{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .conta .card{
+        width: 45%;
+    }
+}
+
+@media(max-width:755px){
+    footer .row .col:nth-child(3) {
+        flex-basis: 30%;
+    }
+
+    .conta .sec{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .conta .card{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .cont{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cont .card{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .cont .card img,
+    .cont .card div{
+        width: 90%;
+    }
+}
+
 @media(max-width:600px) {
     header .logo {
         font-size: 10px;
@@ -710,7 +877,7 @@ footer .copy {
     }
 }
 
-@media(max-width:520px) {
+@media(max-width:540px) {
     footer .row .col {
         flex-basis: 100%;
     }
@@ -724,8 +891,17 @@ footer .copy {
     }
 }
 
+@media(max-width:400px){
+    .cont .card div h6{
+        font-size: 22px;
+    }
+}
+
 @media(max-width:300px){
     .container .card img{
         width: 260px;
+    }
+    .mapouter{
+        width: 200px;
     }
 }
