@@ -519,6 +519,7 @@ header ul li.drop:hover .sub-menu ul li{
     width: 90%;
     margin: auto;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .conta .card{
@@ -527,6 +528,7 @@ header ul li.drop:hover .sub-menu ul li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px 0;
 }
 
 .conta .card p{
@@ -547,12 +549,6 @@ header ul li.drop:hover .sub-menu ul li{
 .conta .card div i{
     color: gold;
     font-size: 25px;
-}
-
-.conta .sec{
-    display: flex;
-    width: 42vw;
-    justify-content: space-between;
 }
 
 .contan{
@@ -596,6 +592,61 @@ header ul li.drop:hover .sub-menu ul li{
 
 .con .questions .card p{
     color: white;
+}
+
+.div{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div .div-card{
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.div .div-card .div-content{
+    padding: 30px 0vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div .div-card .div-content img{
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.div .div-card .div-content div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div .div-card .div-content div h3{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.div .div-card .div-content div div{
+    width: 40vw;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.div .div-card .div-content div div h6{
+    font-size: 30px;
+    text-align: end;
+    line-height: 20px;
+}
+
+.div .div-card .div-content div div h6:nth-child(1){
+    text-align: start;
 }
 
 footer {
@@ -851,17 +902,9 @@ footer .copy {
 }
 
 @media(max-width:990px) {
-    .conta{
-        flex-direction: column;
-    }
-
-    .conta .sec{
-        width: 100%;
-        margin-top: 20px;
-    }
-
     .conta .card{
-        width: 45%;
+        margin: 10px;
+        width: 40%;
     }
 }
 
