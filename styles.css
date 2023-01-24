@@ -70,7 +70,7 @@ header .logo img {
 }
 
 header ul {
-    flex: 3;
+    flex: 2;
     display: flex;
     justify-content: space-evenly;
 }
@@ -562,6 +562,42 @@ header ul li.drop:hover .sub-menu ul li{
     justify-content: center;
 }
 
+.con{
+    padding-top: 40px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+}
+
+.con h1{
+    margin: auto;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.con .questions{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 5vw;
+}
+
+.con .questions .card{
+    width: 43vw;
+    margin: 20px 0;
+}
+
+.con .questions .card h3{
+    color: #00CDFF;
+}
+
+.con .questions .card p{
+    color: white;
+}
+
 footer {
     margin-top: 50px;
     width: 100%;
@@ -859,6 +895,10 @@ footer .copy {
     .cont .card div{
         width: 90%;
     }
+
+    .con .questions .card{
+        width: 100%;
+    }
 }
 
 @media(max-width:600px) {
@@ -874,6 +914,10 @@ footer .copy {
 
     .container .card img{
         width: 450px;
+    }
+
+    .con h1{
+        font-size: 30px;
     }
 }
 
