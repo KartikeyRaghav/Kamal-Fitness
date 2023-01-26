@@ -30,7 +30,7 @@ html {
 body {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(to left, #071D31, #05386b);
+    background: rgb(215, 215, 215);
 }
 
 header {
@@ -198,7 +198,7 @@ header ul li.drop:hover .sub-menu ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #05386b;
+    background: grey;
 }
 
 .div-container .div-card::before {
@@ -253,102 +253,6 @@ header ul li.drop:hover .sub-menu ul li{
     background: linear-gradient(to right, #34e89e, #0f3443);
 }
 
-.div-container .div-card:nth-child(11):before {
-    background: linear-gradient(to right, #6190e8, #a7bfe8);
-}
-
-.div-container .div-card:nth-child(12):before {
-    background: linear-gradient(to right, #44a08d, #093637);
-}
-
-.div-container .div-card:nth-child(13):before {
-    background: linear-gradient(to right, #200122, #6f0000);
-}
-
-.div-container .div-card:nth-child(14):before {
-    background: linear-gradient(to right, #4568dc, #b06ab3);
-}
-
-.div-container .div-card:nth-child(15):before {
-    background: linear-gradient(to right, #43c6ac, #191654);
-}
-
-.div-container .div-card:nth-child(16):before {
-    background: linear-gradient(to right, #093028, #237a57);
-}
-
-.div-container .div-card:nth-child(17):before {
-    background: linear-gradient(to right, #43c6ac, #f8ffae);
-}
-
-.div-container .div-card:nth-child(18):before {
-    background: linear-gradient(to right, #f0f2f0, #000c40);
-}
-
-.div-container .div-card:nth-child(19):before {
-    background: linear-gradient(to right, #c0c0aa, #1cefff);
-}
-
-.div-container .div-card:nth-child(20):before {
-    background: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
-}
-
-.div-container .div-card:nth-child(21):before {
-    background: linear-gradient(to right, #dbe6f6, #c5796d);
-}
-
-.div-container .div-card:nth-child(22):before {
-    background: linear-gradient(to right, #3494e6, #ec6ead);
-}
-
-.div-container .div-card:nth-child(23):before {
-    background: linear-gradient(to right, #67b26f, #4ca2cd);
-}
-
-.div-container .div-card:nth-child(24):before {
-    background: linear-gradient(to right, #f3904f, #3b4371);
-}
-
-.div-container .div-card:nth-child(25):before {
-    background: linear-gradient(to right, #ee0979, #ff6a00);
-}
-
-.div-container .div-card:nth-child(26):before {
-    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
-}
-
-.div-container .div-card:nth-child(27):before {
-    background: linear-gradient(to right, #41295a, #2f0743);
-}
-
-.div-container .div-card:nth-child(28):before {
-    background: linear-gradient(to right, #00c3ff, #ffff1c);
-}
-
-.div-container .div-card:nth-child(29):before {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-}
-
-.div-container .div-card:nth-child(30):before {
-    background: linear-gradient(to right, #fffc00, #ffffff);
-}
-
-.div-container .div-card:nth-child(31):before {
-    background: linear-gradient(to right, #ff00cc, #333399);
-}
-
-.div-container .div-card:nth-child(32):before {
-    background: linear-gradient(to right, #de6161, #2657eb);
-}
-
-.div-container .div-card:nth-child(33):before {
-    background: linear-gradient(to right, #ef32d9, #89fffd);
-}
-
-.div-container .div-card:nth-child(34):before {
-    background: linear-gradient(to right, #3a6186, #89253e);
-}
-
 .div-container .div-card::after {
     content: '';
     position: absolute;
@@ -391,12 +295,12 @@ header ul li.drop:hover .sub-menu ul li{
 .div-container .div-card .div-content h3.heading {
     margin-bottom: 0px;
     font-size: 2em;
-    color: #5cdb95;
+    color: yellow;
     text-align: center;
 }
 
 .div-container .div-card .div-content p {
-    color: #ccc;
+    color: white;
     font-weight: bold;
 }
 
@@ -406,18 +310,18 @@ header ul li.drop:hover .sub-menu ul li{
 }
 
 .star h1 {
-    color: #00CDFF;
+    color: #004759;
     font-size: 40px;
 }
 
 .star p {
     font-size: 18px;
-    color: white;
+    color: black;
 }
 
 .container {
     padding: 20px 5vw;
-    background-color: white;
+    background-color: rgb(215, 215, 215);
 }
 
 .container .card {
@@ -507,10 +411,10 @@ header ul li.drop:hover .sub-menu ul li{
 .cont .card div h6{
     font-size: 30px;
     text-align: end;
+    line-height: 20px;
 }
 
 .cont .card div h6:nth-child(1){
-    line-height: 20px;
     text-align: start;
 }
 
@@ -534,12 +438,12 @@ header ul li.drop:hover .sub-menu ul li{
 .conta .card p{
     font-size: 16px;
     text-align: center;
-    color: #ccc;
+    color: black;
 }
 
 .conta .card h6{
     font-size: 23px;
-    color: white;
+    color: blue;
 }
 
 .conta .card div{
@@ -612,10 +516,12 @@ header ul li.drop:hover .sub-menu ul li{
     padding: 30px 0vw;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .div .div-card .div-content img{
     width: 30vw;
+    height: fit-content;
     border-radius: 10px;
 }
 
@@ -627,7 +533,7 @@ header ul li.drop:hover .sub-menu ul li{
 
 .div .div-card .div-content div h3{
     font-size: 35px;
-    color: white;
+    color: blue;
     text-align: center;
     margin: 20px 0;
 }
@@ -647,6 +553,42 @@ header ul li.drop:hover .sub-menu ul li{
 
 .div .div-card .div-content div div h6:nth-child(1){
     text-align: start;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.wrap .card{
+    background: wheat;
+    border-radius: 10px;
+    width: 30vw;
+    align-items: center;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.wrap .card h1{
+    color: #000c40;
+}
+
+.wrap .card h5{
+    color: red;
+    margin-bottom: 5px;
+}
+
+.div-container .div-card .wrap .card ul{
+    text-align: left;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.div-container .div-card .wrap .card ul li{
+    color: #2d0b00;
 }
 
 footer {
@@ -906,6 +848,20 @@ footer .copy {
         margin: 10px;
         width: 40%;
     }
+
+    .div .div-card .div-content{
+        flex-direction: column;
+        padding: 20px 40px;
+        align-items: center;
+    }
+
+    .div .div-card .div-content img{
+        width: 70vw;
+    }
+
+    .div .div-card .div-content div div{
+        width: 70vw;
+    }
 }
 
 @media(max-width:755px){
@@ -978,9 +934,13 @@ footer .copy {
     }
 }
 
-@media(max-width:400px){
+@media(max-width:423px){
     .cont .card div h6{
         font-size: 22px;
+    }
+
+    .div .div-card .div-content div h3{
+        font-size: 25px;
     }
 }
 
